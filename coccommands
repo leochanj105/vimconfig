@@ -1,4 +1,5 @@
-#install node
+# install node
+# install fzf
 git clone https://github.com/vim/vim.git
 cd vim/src
 make
@@ -6,4 +7,11 @@ sudo make install
 
 
 https://github.com/nodejs/help/wiki/Installation
-https://github.com/neoclide/coc.nvim
+https://github.com/neoclide/coc.nvim 
+https://stackoverflow.com/questions/67985216/install-latest-maven-package-in-ubuntu-via-apt-package-manager-or-other-ways
+https://dev.to/thegroo/install-and-manage-multiple-java-versions-on-linux-using-alternatives-5e93
+
+# updating mvn to 3.9+ and jdk to 17+ for jc.nvim to work!!!
+#
+# To Install java extension for coc
+:CocInstall coc-java
