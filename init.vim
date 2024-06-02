@@ -4,7 +4,7 @@ Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
-Plug 'junegunn/fzf' | Plug 'junegunn/fzf.vim'
+"Plug 'junegunn/fzf' | Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug 'artur-shaik/vim-javacomplete2'
 
@@ -93,7 +93,8 @@ set autoindent
 set smartindent
 set smarttab
 set expandtab
-set nowrap
+" set nowrap
+"set wrap
 set list
 set listchars=eol:.,tab:>-,trail:~,extends:>,precedes:<
 "set cursorline
@@ -108,7 +109,6 @@ set noerrorbells visualbell t_vb=
 
 set undodir=~/.config/nvim/undodir
 set undofile
-set clipboard=unnamed
 
 set scrolloff=8
 "set signcolumn=yes
@@ -123,7 +123,7 @@ set nobackup
 set scrolloff=10
 
 " Do not wrap lines. Allow long lines to extend as far as the line goes.
-set nowrap
+"set nowrap
 
 " While searching though a file incrementally highlight matching characters
 " as you type.
@@ -165,7 +165,6 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
 set mouse=a
 
-
 " ui configs
 if !has('gui_running') && &term =~ '\%(screen\|tmux\)'
     let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
@@ -187,7 +186,7 @@ let g:terminal_ansi_colors = [
 " nerdtree configs
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
+"nnoremap <C-f> :NERDTreeFind<CR>
 nnoremap <C-l> :tabn<CR>
 nnoremap <C-j> :tabp<CR>
 nnoremap <C-n> :tabnew<CR>
