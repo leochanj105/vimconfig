@@ -4,7 +4,7 @@ Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
-"Plug 'junegunn/fzf' | Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf' | Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug 'artur-shaik/vim-javacomplete2'
 
@@ -198,11 +198,11 @@ set wildignore+=*.DS_Store,*.min.*
 let NERDTreeMapOpenInTab='<ENTER>'
 autocmd BufWinEnter * silent NERDTreeMirror
 " Start on Entry
-autocmd VimEnter * NERDTree | wincmd p
+" autocmd VimEnter * NERDTree | wincmd p | :NERDTreeToggle
 " Exit Vim if NERDTree is the only window remaining.
 autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 " Open the existing NERDTree on each new tab.
-autocmd BufWinEnter * if &buftype != 'quickfix' && getcmdwintype() == '' | silent NERDTreeMirror | endif
+" autocmd BufWinEnter * if &buftype != 'quickfix' && getcmdwintype() == '' | silent NERDTreeMirror | endif
 
 
 " fzf configs
@@ -210,7 +210,7 @@ let g:fzf_vim = {}
 let g:fzf_vim.preview_window = ['hidden,right,50%,<70(up,40%)', 'ctrl-/']
 "let g:fzf_vim.preview_window = ['right,50%', 'ctrl-/']
 let g:fzf_layout = { 'down': '~20%' }
-"nnoremap <silent> <C-f> :Files<CR>
+nnoremap <silent> <C-f> :Files<CR>
 let g:fzf_action = { 'enter': 'tab split' }
 
 " coc configs
