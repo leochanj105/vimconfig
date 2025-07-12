@@ -6,6 +6,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
 Plug 'junegunn/fzf' | Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'memgraph/cypher.vim'
 "Plug 'artur-shaik/vim-javacomplete2'
 
 "Plug 'neovim/nvim-lspconfig'
